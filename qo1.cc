@@ -6,6 +6,7 @@
    Purpose: To demonstrate how to solve a quadratic optimization
               problem using the MOSEK API.
   modified by fu
+  2019 home
  */
 
 #include <stdio.h>
