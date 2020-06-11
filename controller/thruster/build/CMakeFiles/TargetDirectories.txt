@@ -1,0 +1,4 @@
+/home/skloe/catkin_ws4/src/dp_core/src/testosqp/build/CMakeFiles/rebuild_cache.dir
+/home/skloe/catkin_ws4/src/dp_core/src/testosqp/build/CMakeFiles/testthrust_osqp.dir
+/home/skloe/catkin_ws4/src/dp_core/src/testosqp/build/CMakeFiles/edit_cache.dir
+/home/skloe/catkin_ws4/src/dp_core/src/testosqp/build/CMakeFiles/testthrust_TAK.dir

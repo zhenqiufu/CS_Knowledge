@@ -1,0 +1,1 @@
+/usr/bin/c++   -O0 -Wall -Wextra -g -ggdb -pedantic   CMakeFiles/testthrust_TAK.dir/testthrust_TAK.cc.o  -o testthrust_TAK -Wl,-rpath,/home/skloe/catkin_ws4/src/dp_core/third_party/osqp/build/out /home/skloe/catkin_ws4/src/dp_core/third_party/osqp/build/out/libosqp.so -lboost_system -lboost_filesystem -lboost_iostreams -lutil 
