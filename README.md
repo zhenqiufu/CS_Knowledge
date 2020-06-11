@@ -30,4 +30,8 @@ Git push origin master
 
 Git clone git@github.com:fuzhenqiu/respo.git
 
- 还是试用分支管理吧
+ 
+
+
+
+每次git pull一下,然后再提交
