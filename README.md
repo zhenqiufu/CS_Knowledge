@@ -32,4 +32,9 @@ Git clone git@github.com:fuzhenqiu/respo.git
 
 
 
+<<<<<<< HEAD
 我也来一下
+=======
+多人开发
+
+>>>>>>> ec26ba5c90337ee68984a049de1552a305d4bb22
