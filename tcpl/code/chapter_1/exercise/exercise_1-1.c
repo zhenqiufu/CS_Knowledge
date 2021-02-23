@@ -5,5 +5,8 @@
     > Created Time: 2021年02月03日 星期三 10时25分33秒
  ************************************************************************/
 
-#include<stdio.h>
-
+#include <stdio.h>
+int main() {
+  printf("Hello world!\n");
+  return 0;
+}
