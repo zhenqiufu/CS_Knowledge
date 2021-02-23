@@ -1,0 +1,7 @@
+GCC
+
+MAKE
+
+CMAKE
+
+autotools
