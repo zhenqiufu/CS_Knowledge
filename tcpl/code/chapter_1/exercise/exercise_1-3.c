@@ -5,8 +5,21 @@
     > Created Time: 2021年02月03日 星期三 10时26分02秒
  ************************************************************************/
 
-#include<stdio.h>
+#include <stdio.h>
 int main() {
-  printf("Hello world!\n");
+  float fahr, celcius;
+  int lower, upper, step;
+
+  lower = 0;
+  upper = 300;
+  step = 20;
+
+  printf("fahr celcius\n");
+  fahr = lower;
+  while (fahr <= upper) {
+    celcius = (5.0 / 9.0) * (fahr - 32);
+    printf("%3.0f  %6.1f\n", fahr, celcius);
+    fahr = fahr + step;
+  }
   return 0;
 }

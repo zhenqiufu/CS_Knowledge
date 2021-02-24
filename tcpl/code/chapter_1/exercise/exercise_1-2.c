@@ -7,6 +7,6 @@
 
 #include<stdio.h>
 int main() {
-  printf("Hello world!\n");
+  printf("Trying to print \c....\n");
   return 0;
 }
