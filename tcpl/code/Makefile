@@ -8,6 +8,7 @@ subsystem:
 	cd $(SUBDIR)  &&  cd $(SUBDIR_EXERCISE) && $(MAKE)
 	cd $(SUBDIR_7)  &&  $(MAKE)
 	cd $(SUBDIR)  &&  cd $(SUBDIR_EXERCISE) && $(MAKE)
+	@ echo "MAKE ALL SUCCESSFULLY"
 
 clean:
 	cd $(SUBDIR)  &&  $(MAKECLEAN)

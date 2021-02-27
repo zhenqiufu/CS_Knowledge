@@ -1,17 +1,16 @@
 /*************************************************************************
-    > File Name: exercise_1-2.c
+    > File Name: exercise_1-7.c
     > Author: FU Zhenqiu
     > Mail: fuzhenqiu0810@gmail.com
-    > Created Time: 2021年02月03日 星期三 10时25分44秒
+    > Created Time: Sat 27 Feb 2021 04:06:41 AM PST
  ************************************************************************/
 
 #include<stdio.h>
-int main() {
-  printf("Trying to print \c....\n");
-  return 0;
+int main(){
+	int c = EOF;
+	printf("EOF value is %d\n", c);
 }
 
-/* note:
-compile with a waning 
-print the letter 'c' on the screen.
+/*
+EOF value is -1
 */
