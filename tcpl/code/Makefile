@@ -15,3 +15,4 @@ clean:
 	cd $(SUBDIR)  &&  cd $(SUBDIR_EXERCISE) && $(MAKECLEAN)
 	cd $(SUBDIR_7)  &&  $(MAKECLEAN)
 	cd $(SUBDIR)  &&  cd $(SUBDIR_EXERCISE) && $(MAKECLEAN)
+	@ echo "MAKE CLEAN ALL SUCCESSFULLY"

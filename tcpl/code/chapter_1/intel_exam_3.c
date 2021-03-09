@@ -1,8 +1,8 @@
 /*************************************************************************
-    > File Name: exercise_1-9.c
+    > File Name: intel_exam.c
     > Author: FU Zhenqiu
     > Mail: fuzhenqiu0810@gmail.com
-    > Created Time: Sat 27 Feb 2021 04:24:32 AM PST
+    > Created Time: Tue 09 Mar 2021 05:04:25 PM CST
  ************************************************************************/
 
 #include <stdio.h>
@@ -11,11 +11,8 @@ int main() {
   int c;
   while ((c = getchar()) != EOF) {
     if (c == ' ') {
-      putchar(c);
-      while ((c = getchar()) != EOF && c == ' ')
-        ;
-    }
-    if (c != EOF) {
+      putchar('\t');
+    } else {
       putchar(c);
     }
   }
