@@ -5,13 +5,16 @@
     > Created Time: Fri 26 Feb 2021 02:11:13 AM PST
  ************************************************************************/
 
-#include<stdio.h>
-#include<ctype.h>
-int main ()
-{
-	int c;
-	while((c=getchar())!=EOF){
-		putchar(tolower(c));
-	}
-	return 0;
+#include <ctype.h>
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+  int c;
+  while ((c = getchar()) != EOF) {
+    putchar(tolower(c));
+  }
+  // printf("%d\n", argc);
+  // for (int i = 0; i < argc; i++) {
+  //   printf("argument[%d]is: %s\n", i, argv[i]);
+  // }
+  return 0;
 }
