@@ -8,48 +8,66 @@
 #include <stdio.h>
 #define MAXLINE 100
 
-int mygetline(char line[], int maxline);
-void copy(char to[], char from[]);
+int getline2(char line[], int maxline);
+void myreverse(char to[], char from[], int len);
+void reverse(char line[]);
 
 int main() {
   int len;
-  int max;
   char line[MAXLINE];
-  char longest[MAXLINE];
+  char reline[MAXLINE];
 
-  max = 0;
-  while ((len = mygetline(line, MAXLINE)) > 0) {
-    if (len > max) {
-      max = len;
-      copy(longest, line);
-    }
+  while ((len = getline2(line, MAXLINE)) > 0) {
+    printf("raw line:     %s\n", line);
+    reverse(line);
+
+    printf("reverse line: %s\n", line);
   }
 
-  if (max > 0) {
-    printf("longest string line is: \n");
-    printf("%s\n", longest);
-  }
   return 0;
 }
 
-int mygetline(char s[], int lim) {
+int getline2(char line[], int limit)
+
+{
   int i, c;
-  for (i = 0; i < lim && (c = getchar()) != EOF && c != '\n'; ++i) {
-    s[i] = c;
+
+  for (i = 0; i < limit - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
+    line[i] = c;
   }
+
   if (c == '\n') {
-    s[i] = c;
-    ++i;
+    line[i] = c;
+    i++;
   }
-  s[i] = '\0';
+
+  line[i] = '\0';
+
   return i;
 }
 
-void copy(char to[], char from[]) {
-  int i;
+void reverse(char s[])
+
+{
+  int i, j, c;
+
   i = 0;
 
-  while ((to[i] = from[i]) != '\0') {
-    i++;
-  }
+  /* This step can be avoided if the length of the string is given as an
+   * argument.
+   */
+
+  for (j = 0; s[j] != '\n'; j++)
+    ;
+
+  if (j > 1)
+
+    while (i < j) {
+      c = s[i];
+      s[i] = s[j];
+      s[j] = c;
+
+      i++;
+      j--;
+    }
 }

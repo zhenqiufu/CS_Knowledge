@@ -7,6 +7,8 @@
 
 #include <stdio.h>
 #define MAXIMUM_LENGTH 9
+#define OUT 0
+#define IN 1
 
 int main()
 
@@ -17,20 +19,22 @@ int main()
 
   for (i = 0; i < MAXIMUM_LENGTH; i++) counts[i] = 0;
 
-  is_in_word = length = max = 0;
-  while ((c = getchar()) != EOF)
-
+  is_in_word = OUT;
+  length = max = 0;
+  while ((c = getchar()) != EOF) {
     if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') {
-      is_in_word = 1;
+      is_in_word = IN;
       length++;
 
     } else {
       if (is_in_word && length <= MAXIMUM_LENGTH)
-
-        if (++counts[length - 1] > max) max = counts[length - 1];
-
-      is_in_word = length = 0;
+        if (++counts[length - 1] > max) {
+          max = counts[length - 1];
+        }
+      is_in_word = OUT;
+      length = 0;
     }
+  }
 
   /* Print horizontal histogram. */
 
