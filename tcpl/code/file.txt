@@ -64,8 +64,9 @@ int main()
 
         state = NOTHING;
 
-      if (c != EOF) putchar(c);
+      if (c != EOF) putchar(c);error
     }
 
   return 0;
 }
+
